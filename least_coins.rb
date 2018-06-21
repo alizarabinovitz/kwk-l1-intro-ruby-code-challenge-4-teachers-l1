@@ -6,15 +6,15 @@ def least_coins(cents)
     :nickels => 0,
     :pennies => 0
   }
-  while cents>25
+  while cents>=25
     coins[:quarters] += 1
     cents -= 25
   end
-  while cents>10
+  while cents>=10
     coins[:dimes] += 1
     cents -= 10
   end
-  while cents>5
+  while cents>=5
     coins[:nickels] += 1
     cents -= 5
   end
