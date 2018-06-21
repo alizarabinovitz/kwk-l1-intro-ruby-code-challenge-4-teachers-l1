@@ -14,7 +14,7 @@ def least_coins(cents)
     coins[:dimes] += 1
     cents -= 10
   end
-  if cents>5
+  while cents>5
     coins[:nickels] += 1
     cents -= 5
   end
