@@ -19,8 +19,8 @@ def least_coins(cents)
     cents -= 5
   end
   coins[:pennies] = cents
-  return coins
   puts coins
+  return coins
 end
 
 least_coins(55)
